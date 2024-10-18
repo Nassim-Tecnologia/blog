@@ -1,0 +1,17 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Repositorio dedicado para armazenar os blog posts do site e gerar o RSS feed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "feed": "^4.2.2",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "toml": "^3.0.0"
+  }
+}
