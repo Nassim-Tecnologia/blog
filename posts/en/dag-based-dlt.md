@@ -5,8 +5,7 @@ categories:
   - DLT
   - Software
 date: "2023-06-02"
-readTime: "7 mins read"
-heroImageSrc: "/assets/posts/bdag.png"
+heroImageSrc: "https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/dag-based-dlt/bdag.png"
 pageTitle: "BlockDAG Ledger"
 description: "BlockDAG based Distributed Ledger Tecnology"
 ---

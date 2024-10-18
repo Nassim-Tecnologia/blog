@@ -4,8 +4,7 @@ categories:
   - Software
 date: "2024-10-14"
 author: "0xthiagomartins"
-readTime: "12 mins read"
-heroImageSrc: "/assets/images/blog-detail-hero.png"
+heroImageSrc: "https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/praticas-engenharia-software/blog-detail-hero.png"
 pageTitle: "As Melhores Práticas em Engenharia de Software para 2024"
 description: "Explore as melhores práticas em engenharia de software para 2024, incluindo DevSecOps, desenvolvimento ágil, microsserviços, IA, computação em nuvem, blockchain, RV/RA e foco na experiência do usuário."
 ---

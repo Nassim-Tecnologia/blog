@@ -5,8 +5,7 @@ categories:
   - Sistemas
 date: "2024-10-14"
 author: "0xthiagomartins"
-readTime: "30 mins read"
-heroImageSrc: "/assets/posts/ms.png"
+heroImageSrc: "https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/ms/ms.png"
 pageTitle: "BlockDAG Ledger"
 description: "A arquitetura de microsserviços permite desenvolvimento ágil e escalável, dividindo aplicações em serviços independentes."
 ---
@@ -59,7 +58,7 @@ Esses atributos tornam aplicações distribuídas baseadas em microsserviços fl
 
 Para melhor compreender a arquitetura de microsserviços, vamos compará-la com a abordagem tradicional: arquitetura monolítica. Em resumo, microsserviços são coleções de serviços menores e independentemente implantáveis, enquanto monólitos são construídos como sistemas unificados.
 
-![monoliths x microservices](/assets/posts/monoxmicro.png)
+![monoliths x microservices](https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/ms/monoxmicro.png)
 
 Segundo 
 > A arquitetura de microsserviços oferece maior flexibilidade e escalabilidade em comparação com monólitos.
@@ -405,7 +404,7 @@ Mas o que exatamente o Kubernetes pode fazer?
 
 Pode-se pensar que, por serem isolados, containers são "seguros". Infelizmente, não é tão simples. Embora seja verdade que containers estão isolados uns dos outros no espaço do usuário, configurações incorretas, vulnerabilidades e atores maliciosos representam ameaças. Simplificando: proteger seus containers é essencial.
 
-![img](/assets/posts/ms-illustration.png)
+![img](https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/ms/ms-illustration.png)
 
 Existem muitas considerações específicas de segurança de container que devem ser levadas em conta ao containerizar aplicações. Por exemplo, monitoramento contínuo de registries de containers para novas vulnerabilidades e utilização de firewalls de container são aspectos importantes de uma segurança abrangente de container. Além disso, proteger o sistema operacional host onde seu engine de container roda é essencial.
 
