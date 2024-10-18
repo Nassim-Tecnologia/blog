@@ -4,39 +4,47 @@ const matter = require('gray-matter');
 const { Feed } = require('feed');
 const toml = require('toml');
 
-// Load authors from authors.toml
+const BUSINESS_NAME = "Nassim"
+const BUSINESS_EMAIL = 'thiago.fmartins@outlook.com';
+const BUSINESS_CONTENT = 'https://github.com/Nassim-Tecnologia/blog';
+const BUSINESS_BLOG = 'https://nassim.com.br/blog'
+const BUSINESS_BRAND = "https://github.com/Nassim-Tecnologia/brand-assets"
+
 const loadAuthors = () => {
     const authorsPath = path.join(process.cwd(), 'authors.toml');
     const fileContents = fs.readFileSync(authorsPath, 'utf8');
     return toml.parse(fileContents);
 };
 
-// Placeholder for read time calculation
+// Função para calcular o tempo de leitura baseado na contagem de palavras
 const calculateReadTime = (content) => {
-    // TODO: Implement read time calculation
+    const wordsPerMinute = 200; // Velocidade média de leitura
+    const text = content.replace(/<[^>]+>/g, ''); // Remove tags HTML, se houver
+    const wordCount = text.split(/\s+/).length;
+    const time = Math.ceil(wordCount / wordsPerMinute);
+    return time; // em minutos
 };
 
-// Translations for feed titles and descriptions
 const translations = {
     en: {
-        authorFeedTitle: (name) => `Nassim Blog RSS Feed - EN - ${name}`,
+        authorFeedTitle: (name) => `${BUSINESS_NAME} Blog RSS Feed - EN - ${name}`,
         authorFeedDescription: (name) => `Stay updated with the latest blog posts from ${name}.`,
-        categoryFeedTitle: (category) => `Nassim Blog RSS Feed - Category: ${category} - EN`,
+        categoryFeedTitle: (category) => `${BUSINESS_NAME} Blog RSS Feed - Category: ${category} - EN`,
         categoryFeedDescription: (category) => `Latest posts in the "${category}" category.`,
-        anyFeedTitle: `Nassim Blog RSS Feed - EN`,
+        anyFeedTitle: `${BUSINESS_NAME} Blog RSS Feed - EN`,
         anyFeedDescription: `Stay updated with the latest blog posts from all authors and categories.`,
     },
     pt: {
-        authorFeedTitle: (name) => `Nassim Blog RSS Feed - PT - ${name}`,
+        authorFeedTitle: (name) => `${BUSINESS_NAME} Blog RSS Feed - PT - ${name}`,
         authorFeedDescription: (name) => `Fique atualizado com os últimos posts do blog de ${name}.`,
-        categoryFeedTitle: (category) => `Nassim Blog RSS Feed - Categoria: ${category} - PT`,
+        categoryFeedTitle: (category) => `${BUSINESS_NAME} Blog RSS Feed - Categoria: ${category} - PT`,
         categoryFeedDescription: (category) => `Últimos posts na categoria "${category}".`,
-        anyFeedTitle: `Nassim Blog RSS Feed - PT`,
+        anyFeedTitle: `${BUSINESS_NAME} Blog RSS Feed - PT`,
         anyFeedDescription: `Fique atualizado com os últimos posts do blog de todos os autores e categorias.`,
     },
 };
 
-// Helper function to create Feed instance
+// Função auxiliar para criar uma instância de Feed
 const createFeed = (language, filterType, filter, site_url, rssLink) => {
     let title, description, authorInfo;
 
@@ -52,16 +60,16 @@ const createFeed = (language, filterType, filter, site_url, rssLink) => {
         title = translations[language].categoryFeedTitle(filter);
         description = translations[language].categoryFeedDescription(filter);
         authorInfo = {
-            name: "Nassim Blog",
-            email: "contact@nassim.com",
+            name: `${BUSINESS_NAME} Blog`,
+            email: BUSINESS_EMAIL,
             link: site_url,
         };
     } else if (filterType === 'any') {
         title = translations[language].anyFeedTitle;
         description = translations[language].anyFeedDescription;
         authorInfo = {
-            name: "Nassim Blog",
-            email: "contact@nassim.com",
+            name: `${BUSINESS_NAME} Blog`,
+            email: BUSINESS_EMAIL,
             link: site_url,
         };
     }
@@ -69,26 +77,24 @@ const createFeed = (language, filterType, filter, site_url, rssLink) => {
     return new Feed({
         title: title,
         description: description,
-        id: site_url,
-        link: site_url,
+        id: BUSINESS_BLOG,
+        link: BUSINESS_BLOG,
         language: language,
-        image: `${site_url}/logo.jpeg`,
-        favicon: `${site_url}/favicon.ico`,
+        image: `${BUSINESS_BRAND}/logo.jpeg`,
+        favicon: `${BUSINESS_BRAND}/favicon.ico`,
         copyright: `All rights reserved ${new Date().getFullYear()}`,
         updated: new Date(),
         generator: "Feed for Node.js",
         feedLinks: {
-            rss: rssLink, // Set RSS link here
+            rss: rssLink,
         },
         author: authorInfo,
     });
 };
 
-// Function to generate RSS feeds
 const generateRSS = () => {
     const postsDirectory = path.join(process.cwd(), 'posts');
     const languages = ["en", "pt"];
-    const site_url = "https://github.com/Nassim-Tecnologia/blog";
     const authors = loadAuthors();
 
     languages.forEach((language) => {
@@ -100,7 +106,7 @@ const generateRSS = () => {
 
         const filenames = fs.readdirSync(langDir).filter(file => file.endsWith('.md'));
 
-        // Collect unique categories
+        // Coleta categorias únicas
         const categoriesSet = new Set();
 
         filenames.forEach((filename) => {
@@ -114,13 +120,11 @@ const generateRSS = () => {
 
         const categories = Array.from(categoriesSet);
 
-        // Generate feeds per author
+        // Geração de feeds por autor
         Object.keys(authors).forEach((authorId) => {
             const author = authors[authorId];
-            const rssLink = `${site_url}/feeds/${language}/author/${authorId}/latest-feed.xml`;
-            const feed = createFeed(language, 'author', author, site_url, rssLink);
-            // Removed the redundant line below to prevent TypeError
-            // feed.feedLinks.rss = rssLink;
+            const rssLink = `${BUSINESS_CONTENT}/feeds/${language}/author/${authorId}/latest-feed.xml`;
+            const feed = createFeed(language, 'author', author, BUSINESS_CONTENT, rssLink);
 
             filenames.forEach((filename) => {
                 const slug = filename.replace(/\.md$/, '');
@@ -128,55 +132,54 @@ const generateRSS = () => {
                 const fileContents = fs.readFileSync(filePath, 'utf8');
                 const { data, content } = matter(fileContents);
 
-                if (data.author !== authorId) return; // Skip posts not by this author
+                if (data.author !== authorId) return; // Ignora posts não do autor atual
+
+                const readTime = calculateReadTime(content);
 
                 feed.addItem({
                     title: data.title,
-                    id: `${site_url}/posts/${language}/${slug}`,
-                    link: `${site_url}/posts/${language}/${slug}`,
+                    id: `${language}-${slug}`,
+                    link: `${BUSINESS_CONTENT}/posts/${language}/${slug}.md`,
                     description: data.description || content.slice(0, 200),
-                    content: content,
                     author: [
                         {
                             name: author.name,
-                            email: author.contacts.email || "sophia@example.com",
-                            link: site_url,
+                            email: author.contacts.email,
                         },
                     ],
-                    date: new Date(data.date), // Retain standard date format
-                    customFields: {
-                        unixTimestamp: new Date(data.date).getTime(),
-                    },
+                    date: new Date(data.date), // Mantém o formato de data padrão
+                    categories: data.categories, // Adiciona categorias
+                    customElements: [
+                        { readTime: `${readTime} min` }, // Adiciona readTime como elemento personalizado
+                    ],
                 });
             });
 
-            // Generate versioned feed
+            // Geração do feed versionado
             const xml = feed.rss2();
-            const unixTimestamp = Date.now(); // Use Unix timestamp for filenames
+            const unixTimestamp = Date.now(); // Usa timestamp Unix para nomear arquivos
             const versionedFilename = `${unixTimestamp}-feed.xml`;
             const latestFilename = `latest-feed.xml`;
-            const outputPath = path.join(process.cwd(), 'feeds', language, 'author', authorId); // Folder structure
+            const outputPath = path.join(process.cwd(), 'feeds', language, 'author', authorId); // Estrutura de pastas
 
             if (!fs.existsSync(outputPath)) {
-                fs.mkdirSync(outputPath, { recursive: true }); // Ensure directory exists
+                fs.mkdirSync(outputPath, { recursive: true }); // Garante que a pasta exista
             }
 
             try {
                 fs.writeFileSync(path.join(outputPath, versionedFilename), xml, 'utf8');
                 fs.writeFileSync(path.join(outputPath, latestFilename), xml, 'utf8');
-                console.log(`RSS feed generated successfully at feeds/${language}/author/${authorId}/${versionedFilename} and feeds/${language}/author/${authorId}/${latestFilename}`);
+                console.log(`RSS feed gerado com sucesso em feeds/${language}/author/${authorId}/${versionedFilename} e feeds/${language}/author/${authorId}/${latestFilename}`);
             } catch (error) {
-                console.error(`Failed to write RSS feed files for author ${authorId} and language ${language}: ${error.message}`);
+                console.error(`Falha ao escrever arquivos de RSS feed para o autor ${authorId} e idioma ${language}: ${error.message}`);
             }
         });
 
-        // Generate feeds per category
+        // Geração de feeds por categoria
         categories.forEach((category) => {
             const encodedCategory = encodeURIComponent(category);
-            const rssLink = `${site_url}/feeds/${language}/category/${encodedCategory}/latest-feed.xml`;
-            const feed = createFeed(language, 'category', category, site_url, rssLink);
-            // Removed the redundant line below to prevent TypeError
-            // feed.feedLinks.rss = rssLink;
+            const rssLink = `${BUSINESS_CONTENT}/feeds/${language}/category/${encodedCategory}/latest-feed.xml`;
+            const feed = createFeed(language, 'category', category, BUSINESS_CONTENT, rssLink);
 
             filenames.forEach((filename) => {
                 const slug = filename.replace(/\.md$/, '');
@@ -184,58 +187,57 @@ const generateRSS = () => {
                 const fileContents = fs.readFileSync(filePath, 'utf8');
                 const { data, content } = matter(fileContents);
 
-                if (!data.categories || !Array.isArray(data.categories) || !data.categories.includes(category)) return; // Skip posts not in this category
+                if (!data.categories || !Array.isArray(data.categories) || !data.categories.includes(category)) return; // Ignora posts não da categoria atual
 
                 const author = authors[data.author];
                 if (!author) {
-                    console.warn(`Author not found for post: ${filename}`);
+                    console.warn(`Autor não encontrado para o post: ${filename}`);
                     return;
                 }
 
+                const readTime = calculateReadTime(content);
+
                 feed.addItem({
                     title: data.title,
-                    id: `${site_url}/posts/${language}/${slug}`,
-                    link: `${site_url}/posts/${language}/${slug}`,
+                    id: `${language}-${slug}`,
+                    link: `${BUSINESS_CONTENT}/posts/${language}/${slug}.md`,
                     description: data.description || content.slice(0, 200),
-                    content: content,
                     author: [
                         {
                             name: author.name,
-                            email: author.contacts.email || "sophia@example.com",
-                            link: site_url,
+                            email: author.contacts.email,
                         },
                     ],
-                    date: new Date(data.date), // Retain standard date format
-                    customFields: {
-                        unixTimestamp: new Date(data.date).getTime(),
-                    },
+                    date: new Date(data.date), // Mantém o formato de data padrão
+                    categories: data.categories, // Adiciona categorias
+                    customElements: [
+                        { readTime: `${readTime} min` }, // Adiciona readTime como elemento personalizado
+                    ],
                 });
             });
 
-            // Generate versioned feed
+            // Geração do feed versionado
             const xml = feed.rss2();
-            const unixTimestamp = Date.now(); // Use Unix timestamp for filenames
+            const unixTimestamp = Date.now(); // Usa timestamp Unix para nomear arquivos
             const versionedFilename = `${unixTimestamp}-feed.xml`;
             const latestFilename = `latest-feed.xml`;
-            const outputPath = path.join(process.cwd(), 'feeds', language, 'category', category); // Folder structure
+            const outputPath = path.join(process.cwd(), 'feeds', language, 'category', category); // Estrutura de pastas
 
             if (!fs.existsSync(outputPath)) {
-                fs.mkdirSync(outputPath, { recursive: true }); // Ensure directory exists
+                fs.mkdirSync(outputPath, { recursive: true }); // Garante que a pasta exista
             }
 
             try {
                 fs.writeFileSync(path.join(outputPath, versionedFilename), xml, 'utf8');
                 fs.writeFileSync(path.join(outputPath, latestFilename), xml, 'utf8');
-                console.log(`RSS feed generated successfully at feeds/${language}/category/${category}/${versionedFilename} and feeds/${language}/category/${category}/${latestFilename}`);
+                console.log(`RSS feed gerado com sucesso em feeds/${language}/category/${category}/${versionedFilename} e feeds/${language}/category/${category}/${latestFilename}`);
             } catch (error) {
-                console.error(`Failed to write RSS feed files for category "${category}" and language ${language}: ${error.message}`);
+                console.error(`Falha ao escrever arquivos de RSS feed para a categoria "${category}" e idioma ${language}: ${error.message}`);
             }
         });
 
-        // Generate 'any' feed (combined feed for all authors and categories)
-        const anyFeed = createFeed(language, 'any', 'any', site_url, `${site_url}/feeds/${language}/any/latest-feed.xml`);
-        // Removed the redundant line below to prevent TypeError
-        // anyFeed.feedLinks.rss = `${site_url}/feeds/${language}/any/latest-feed.xml`;
+        // Geração do feed 'any' (combinado para todos os autores e categorias)
+        const anyFeed = createFeed(language, 'any', 'any', BUSINESS_CONTENT, `${BUSINESS_CONTENT}/feeds/${language}/any/latest-feed.xml`);
 
         filenames.forEach((filename) => {
             const slug = filename.replace(/\.md$/, '');
@@ -245,52 +247,51 @@ const generateRSS = () => {
             const author = authors[data.author];
 
             if (!author) {
-                console.warn(`Author not found for post: ${filename}`);
+                console.warn(`Autor não encontrado para o post: ${filename}`);
                 return;
             }
 
+            const readTime = calculateReadTime(content);
+
             anyFeed.addItem({
                 title: data.title,
-                id: `${site_url}/posts/${language}/${slug}`,
-                link: `${site_url}/posts/${language}/${slug}`,
+                id: `${language}-${slug}`,
+                link: `${BUSINESS_CONTENT}/posts/${language}/${slug}.md`,
                 description: data.description || content.slice(0, 200),
-                content: content,
                 author: [
                     {
                         name: author.name,
-                        email: author.contacts.email || "sophia@example.com",
-                        link: site_url,
+                        email: author.contacts.email,
                     },
                 ],
-                date: new Date(data.date), // Retain standard date format
-                customFields: {
-                    unixTimestamp: new Date(data.date).getTime(),
-                },
+                date: new Date(data.date), // Mantém o formato de data padrão
+                categories: data.categories, // Adiciona categorias
+                customElements: [
+                    { readTime: `${readTime} min` }, // Adiciona readTime como elemento personalizado
+                ],
             });
         });
 
-        // Generate versioned 'any' feed
+        // Geração do feed versionado 'any'
         const anyXml = anyFeed.rss2();
-        const anyUnixTimestamp = Date.now(); // Use Unix timestamp for filenames
+        const anyUnixTimestamp = Date.now(); // Usa timestamp Unix para nomear arquivos
         const anyVersionedFilename = `${anyUnixTimestamp}-feed.xml`;
         const anyLatestFilename = `latest-feed.xml`;
-        const anyOutputPath = path.join(process.cwd(), 'feeds', language, 'any'); // Folder structure
+        const anyOutputPath = path.join(process.cwd(), 'feeds', language, 'any'); // Estrutura de pastas
 
         if (!fs.existsSync(anyOutputPath)) {
-            fs.mkdirSync(anyOutputPath, { recursive: true }); // Ensure directory exists
+            fs.mkdirSync(anyOutputPath, { recursive: true }); // Garante que a pasta exista
         }
 
         try {
             fs.writeFileSync(path.join(anyOutputPath, anyVersionedFilename), anyXml, 'utf8');
             fs.writeFileSync(path.join(anyOutputPath, anyLatestFilename), anyXml, 'utf8');
-            console.log(`'Any' RSS feed generated successfully at feeds/${language}/any/${anyVersionedFilename} and feeds/${language}/any/${anyLatestFilename}`);
+            console.log(`'Any' RSS feed gerado com sucesso em feeds/${language}/any/${anyVersionedFilename} e feeds/${language}/any/${anyLatestFilename}`);
         } catch (error) {
-            console.error(`Failed to write 'any' RSS feed files for language ${language}: ${error.message}`);
+            console.error(`Falha ao escrever arquivos de RSS feed para o idioma ${language}: ${error.message}`);
         }
     });
 
-    // TODO: Implement feed generation by inferred categories
 };
 
-// Execute the RSS generation function
 generateRSS();
