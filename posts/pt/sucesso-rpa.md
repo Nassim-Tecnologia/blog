@@ -4,8 +4,7 @@ categories:
   - RPA
 date: "2024-10-13"
 author: "0xthiagomartins"
-heroImageSrc: "https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/sucesso-rpa/rpa-success.jpeg"
-pageTitle: "Sucesso da RPA"
+image: "https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/sucesso-rpa/rpa-success.jpeg"
 description: "Descubra como a seleção adequada de processos é fundamental para o sucesso da RPA nas empresas, aumentando a eficiência e reduzindo custos."
 ---
 

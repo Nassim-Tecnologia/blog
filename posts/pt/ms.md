@@ -5,8 +5,7 @@ categories:
   - Sistemas
 date: "2024-10-14"
 author: "0xthiagomartins"
-heroImageSrc: "https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/ms/ms.png"
-pageTitle: "BlockDAG Ledger"
+heroImageSrc: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/ms.md/ms.png"
 description: "A arquitetura de microsserviços permite desenvolvimento ágil e escalável, dividindo aplicações em serviços independentes."
 ---
 
@@ -58,7 +57,7 @@ Esses atributos tornam aplicações distribuídas baseadas em microsserviços fl
 
 Para melhor compreender a arquitetura de microsserviços, vamos compará-la com a abordagem tradicional: arquitetura monolítica. Em resumo, microsserviços são coleções de serviços menores e independentemente implantáveis, enquanto monólitos são construídos como sistemas unificados.
 
-![monoliths x microservices](https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/ms/monoxmicro.png)
+![monoliths x microservices](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/ms/monoxmicro.png)
 
 Segundo 
 > A arquitetura de microsserviços oferece maior flexibilidade e escalabilidade em comparação com monólitos.
