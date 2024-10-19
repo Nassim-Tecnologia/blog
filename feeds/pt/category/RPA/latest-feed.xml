@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Nassim Blog RSS Feed - Categoria: RPA - PT</title>
+        <link>https://github.com/Nassim-Tecnologia/blog</link>
+        <description>Últimos posts na categoria "RPA".</description>
+        <lastBuildDate>Sat, 19 Oct 2024 19:32:32 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <language>pt</language>
+        <image>
+            <title>Nassim Blog RSS Feed - Categoria: RPA - PT</title>
+            <url>https://github.com/Nassim-Tecnologia/brand-assets/logo.png</url>
+            <link>https://github.com/Nassim-Tecnologia/blog</link>
+        </image>
+        <copyright>All rights reserved 2024</copyright>
+        <atom:link href="https://github.com/Nassim-Tecnologia/blog/feeds/pt/category/RPA/latest-feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[O Sucesso da RPA Depende da Seleção dos Processos Certos]]></title>
+            <link>https://github.com/Nassim-Tecnologia/blog/posts/pt/sucesso-rpa.md</link>
+            <guid>pt-sucesso-rpa</guid>
+            <pubDate>Sun, 13 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Descubra como a seleção adequada de processos é fundamental para o sucesso da RPA nas empresas, aumentando a eficiência e reduzindo custos.]]></description>
+            <content:encoded><![CDATA[9]]></content:encoded>
+            <author>thiago.fmartins@outlook.com (Thiago Martins)</author>
+            <category>RPA</category>
+            <enclosure url="https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/sucesso-rpa/rpa-success.jpeg" length="0" type="image/jpeg"/>
+        </item>
+    </channel>
+</rss>

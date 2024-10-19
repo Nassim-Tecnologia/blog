@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Nassim Blog RSS Feed - Categoria: Software - PT</title>
+        <link>https://github.com/Nassim-Tecnologia/blog</link>
+        <description>Últimos posts na categoria "Software".</description>
+        <lastBuildDate>Sat, 19 Oct 2024 19:32:32 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <language>pt</language>
+        <image>
+            <title>Nassim Blog RSS Feed - Categoria: Software - PT</title>
+            <url>https://github.com/Nassim-Tecnologia/brand-assets/logo.png</url>
+            <link>https://github.com/Nassim-Tecnologia/blog</link>
+        </image>
+        <copyright>All rights reserved 2024</copyright>
+        <atom:link href="https://github.com/Nassim-Tecnologia/blog/feeds/pt/category/Software/latest-feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Arquitetura de Microsserviços: Desenvolvimento de Software Escalável e Flexível]]></title>
+            <link>https://github.com/Nassim-Tecnologia/blog/posts/pt/ms.md</link>
+            <guid>pt-ms</guid>
+            <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[A arquitetura de microsserviços permite desenvolvimento ágil e escalável, dividindo aplicações em serviços independentes.]]></description>
+            <content:encoded><![CDATA[36]]></content:encoded>
+            <author>thiago.fmartins@outlook.com (Thiago Martins)</author>
+            <category>Software</category>
+            <category>Sistemas</category>
+        </item>
+        <item>
+            <title><![CDATA[As Melhores Práticas em Engenharia de Software para 2024]]></title>
+            <link>https://github.com/Nassim-Tecnologia/blog/posts/pt/praticas-engenharia-software.md</link>
+            <guid>pt-praticas-engenharia-software</guid>
+            <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Explore as melhores práticas em engenharia de software para 2024, incluindo DevSecOps, desenvolvimento ágil, microsserviços, IA, computação em nuvem, blockchain, RV/RA e foco na experiência do usuário.]]></description>
+            <content:encoded><![CDATA[5]]></content:encoded>
+            <author>thiago.fmartins@outlook.com (Thiago Martins)</author>
+            <category>Software</category>
+            <enclosure url="https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/praticas-engenharia-software/blog-detail-hero.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>
