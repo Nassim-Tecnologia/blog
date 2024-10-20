@@ -172,7 +172,7 @@ const generateRSS = () => {
                     category: data.categories ? data.categories.map(category => ({ name: category })) : [],
                     content: JSON.stringify({
                         metadata: {
-                            readTime: data.readTime,
+                            readTime: readTime,
                             author: author
                         },
                     }),
@@ -269,7 +269,7 @@ const generateRSS = () => {
                 category: data.categories ? data.categories.map(category => ({ name: category })) : [],
                 content: JSON.stringify({
                     metadata: {
-                        readTime: data.readTime,
+                        readTime: readTime,
                         author: author
                     },
                 }),
