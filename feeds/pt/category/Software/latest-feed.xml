@@ -4,7 +4,7 @@
         <title>Nassim Blog RSS Feed - Categoria: Software - PT</title>
         <link>https://github.com/Nassim-Tecnologia/blog</link>
         <description>Últimos posts na categoria "Software".</description>
-        <lastBuildDate>Sun, 20 Oct 2024 10:11:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Oct 2024 12:07:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>pt</language>
@@ -36,7 +36,7 @@
             <content:encoded><![CDATA[{"metadata":{"readTime":5,"author":{"name":"Thiago Martins","description":"Thiago Martins is a passionate Software Developer with extensive experience in building high-quality software solutions. \nHe specializes in web development, cloud computing, and microservices architecture. \nThiago is dedicated to continuous learning and staying updated with the latest industry trends and technologies.\n","avatar":"http://github.com/0xthiagomartins.png","contacts":{"email":"thiago.fmartins@outlook.com","instagram":"0xthiagomartins","x":"0xthiagomartins","github":"0xthiagomartins","telegram":"thiagofmartins","linkedin":"0xthiagomartins","whatsapp":"+55 (11) 91964-6223"},"donations":{"ethereum":"0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE","taraxa":"0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE"}}}}]]></content:encoded>
             <author>thiago.fmartins@outlook.com (Thiago Martins)</author>
             <category>Software</category>
-            <enclosure url="https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/praticas-engenharia-software/blog-detail-hero.png" length="0" type="image/png"/>
+            <enclosure url="https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/praticas-engenharia-software/melhores-praticas.jpeg" length="0" type="image/jpeg"/>
         </item>
     </channel>
 </rss>
