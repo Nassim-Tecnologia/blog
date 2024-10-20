@@ -5,7 +5,7 @@ categories:
   - Sistemas
 date: "2024-10-14"
 author: "0xthiagomartins"
-image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/ms.md/ms.png"
+image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/ms/ms.png"
 description: "A arquitetura de microsserviços permite desenvolvimento ágil e escalável, dividindo aplicações em serviços independentes."
 ---
 
@@ -403,7 +403,7 @@ Mas o que exatamente o Kubernetes pode fazer?
 
 Pode-se pensar que, por serem isolados, containers são "seguros". Infelizmente, não é tão simples. Embora seja verdade que containers estão isolados uns dos outros no espaço do usuário, configurações incorretas, vulnerabilidades e atores maliciosos representam ameaças. Simplificando: proteger seus containers é essencial.
 
-![img](https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/ms/ms-illustration.png)
+![img](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/ms/ms-illustration.png)
 
 Existem muitas considerações específicas de segurança de container que devem ser levadas em conta ao containerizar aplicações. Por exemplo, monitoramento contínuo de registries de containers para novas vulnerabilidades e utilização de firewalls de container são aspectos importantes de uma segurança abrangente de container. Além disso, proteger o sistema operacional host onde seu engine de container roda é essencial.
 
