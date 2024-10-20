@@ -170,7 +170,12 @@ const generateRSS = () => {
                     ],
                     date: new Date(data.date), //OK
                     category: data.categories ? data.categories.map(category => ({ name: category })) : [],
-                    content: `${readTime}`,
+                    content: JSON.stringify({
+                        metadata: {
+                            readTime: data.readTime,
+                            author: author
+                        },
+                    }),
                 });
             });
         };
@@ -262,14 +267,19 @@ const generateRSS = () => {
                 ],
                 date: new Date(data.date), //OK
                 category: data.categories ? data.categories.map(category => ({ name: category })) : [],
-                content: `${readTime}`,
+                content: JSON.stringify({
+                    metadata: {
+                        readTime: data.readTime,
+                        author: author
+                    },
+                }),
             });
         });
 
         // Geração do Feed Versionado 'Any'
         const anyXml = anyFeed.rss2();
         const anyUnixTimestamp = Date.now();
-        const anyVersionedFilename = `${anyUnixTimestamp}-feed.xml`;
+        const anyVersionedFilename = `${anyUnixTimestamp} - feed.xml`;
         const anyLatestFilename = `latest-feed.xml`;
         const anyOutputPath = path.join(process.cwd(), 'feeds', language, 'any');
 
@@ -280,9 +290,9 @@ const generateRSS = () => {
         try {
             fs.writeFileSync(path.join(anyOutputPath, anyVersionedFilename), anyXml, 'utf8');
             fs.writeFileSync(path.join(anyOutputPath, anyLatestFilename), anyXml, 'utf8');
-            console.log(`'Any' RSS feed gerado com sucesso em feeds/${language}/any/${anyVersionedFilename} e feeds/${language}/any/${anyLatestFilename}`);
+            console.log(`'Any' RSS feed gerado com sucesso em feeds / ${language} / any / ${anyVersionedFilename} e feeds / ${language} / any / ${anyLatestFilename} `);
         } catch (error) {
-            console.error(`Falha ao escrever 'any' RSS feed para o idioma ${language}: ${error.message}`);
+            console.error(`Falha ao escrever 'any' RSS feed para o idioma ${language}: ${error.message} `);
         }
     });
 

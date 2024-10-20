@@ -5,7 +5,7 @@ categories:
   - Sistemas
 date: "2024-10-14"
 author: "0xthiagomartins"
-heroImageSrc: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/ms.md/ms.png"
+image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/ms.md/ms.png"
 description: "A arquitetura de microsserviços permite desenvolvimento ágil e escalável, dividindo aplicações em serviços independentes."
 ---
 
