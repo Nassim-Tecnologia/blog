@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Nassim Blog RSS Feed - Category: DLT - EN</title>
+        <title>Nassim Blog RSS Feed - EN - Thiago Martins</title>
         <link>https://github.com/Nassim-Tecnologia/blog</link>
-        <description>Latest posts in the "DLT" category.</description>
-        <lastBuildDate>Sat, 19 Oct 2024 19:32:32 GMT</lastBuildDate>
+        <description>Stay updated with the latest blog posts from Thiago Martins.</description>
+        <lastBuildDate>Sun, 20 Oct 2024 08:08:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
         <image>
-            <title>Nassim Blog RSS Feed - Category: DLT - EN</title>
+            <title>Nassim Blog RSS Feed - EN - Thiago Martins</title>
             <url>https://github.com/Nassim-Tecnologia/brand-assets/logo.png</url>
             <link>https://github.com/Nassim-Tecnologia/blog</link>
         </image>
         <copyright>All rights reserved 2024</copyright>
-        <atom:link href="https://github.com/Nassim-Tecnologia/blog/feeds/en/category/DLT/latest-feed.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://github.com/Nassim-Tecnologia/blog/feeds/en/author/0xthiagomartins/latest-feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[DAG-based DLT Concepts]]></title>
             <link>https://github.com/Nassim-Tecnologia/blog/posts/en/dag-based-dlt.md</link>
             <guid>en-dag-based-dlt</guid>
             <pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[BlockDAG based Distributed Ledger Tecnology]]></description>
-            <content:encoded><![CDATA[4]]></content:encoded>
+            <content:encoded><![CDATA[{"metadata":{"author":{"name":"Thiago Martins","description":"Thiago Martins is a passionate Software Developer with extensive experience in building high-quality software solutions. \nHe specializes in web development, cloud computing, and microservices architecture. \nThiago is dedicated to continuous learning and staying updated with the latest industry trends and technologies.\n","avatar":"http://github.com/0xthiagomartins.png","contacts":{"email":"thiago.fmartins@outlook.com","instagram":"0xthiagomartins","x":"0xthiagomartins","github":"0xthiagomartins","telegram":"thiagofmartins","linkedin":"0xthiagomartins","whatsapp":"+55 (11) 91964-6223"},"donations":{"ethereum":"0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE","taraxa":"0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE"}}}}]]></content:encoded>
             <author>thiago.fmartins@outlook.com (Thiago Martins)</author>
             <category>DLT</category>
             <category>Software</category>
