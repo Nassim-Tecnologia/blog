@@ -4,7 +4,7 @@
         <title>Nassim Blog RSS Feed - Category: Software - EN</title>
         <link>https://github.com/Nassim-Tecnologia/blog</link>
         <description>Latest posts in the "Software" category.</description>
-        <lastBuildDate>Sun, 20 Oct 2024 09:43:22 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 20 Oct 2024 10:11:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
@@ -25,7 +25,7 @@
             <author>thiago.fmartins@outlook.com (Thiago Martins)</author>
             <category>DLT</category>
             <category>Software</category>
-            <enclosure url="https://github.com/Nassim-Tecnologia/blog/tree/main/assets/posts/dag-based-dlt/bdag.png" length="0" type="image/png"/>
+            <enclosure url="https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/dag-based-dlt/bdag.png" length="0" type="image/png"/>
         </item>
     </channel>
 </rss>
