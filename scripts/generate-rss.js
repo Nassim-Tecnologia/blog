@@ -15,7 +15,11 @@ const loadAuthors = () => {
     const authorsPath = path.join(process.cwd(), 'authors.toml');
     try {
         const fileContents = fs.readFileSync(authorsPath, 'utf8');
-        return toml.parse(fileContents);
+        const authors = toml.parse(fileContents);
+        return Object.keys(authors).reduce((acc, username) => {
+            acc[username] = { ...authors[username], username };
+            return acc;
+        }, {});
     } catch (error) {
         console.error(`Erro ao ler ${authorsPath}: ${error.message}`);
         process.exit(1);
@@ -262,7 +266,6 @@ const generateRSS = () => {
                 image: data.image,
                 author: [
                     {
-                        username: author.username,
                         name: author.name,
                         email: author.contacts.email,
                     },
