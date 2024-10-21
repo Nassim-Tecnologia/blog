@@ -4,8 +4,8 @@ categories:
   - Design
 date: "2024-10-21"
 author: "0xthiagomartins"
-image: "https://raw.githubusercontent.com/Nassim-Tecnologia/brand-assets/refs/heads/main/logo-dark-without-bg.png"
-description: "Muitos empreendedores acabam deixando para depois a criação da marca, porque não acham que é um investimento importante. No entanto, o logo merece uma atenção especial, pois ele ajuda sua empresa a conquistar o tão sonhado sucesso. O logotipo é o principal objeto que ficará marcado na mente das pessoas, clientes. Ao visualizarem seu logo, rapidamente as pessoas fazem associações com tudo que sua empresa representa no mercado."
+image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/logo/banner.png"
+description: "Muitos empreendedores acabam deixando para depois a criação da marca, porque não acham que é um investimento importante. No entanto, o logo merece uma atenção especial, pois ele ajuda sua empresa a conquistar o tão sonhado sucesso."
 ---
 
 Depois do nome de sua empresa, o logo é o principal motivo pelo qual as pessoas vão se lembrar de sua empresa. Por isso, é de extrema importância que você desenvolva uma marca que compactue com seu segmento, ramo de atividade. Chamar a atenção é imprescindível, desde a parte criativa, desenho, traços, ícones até as cores devem ser escolhidas de forma minuciosa. Pense grande, porque um dia, sua marca pode ser referência de mercado. Nenhuma empresa começa do topo e você tem que tornar seu nome, seu logo uma assinatura, afinal ela precisa ser identificada nas mais diversas situações. Investimento na criação de um logo não é dinheiro perdido, pois em alguns meses ou anos ela pode valer milhões.
