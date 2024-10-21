@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Nassim Blog RSS Feed - Categoria: Design - PT</title>
+        <link>https://github.com/Nassim-Tecnologia/blog</link>
+        <description>Últimos posts na categoria "Design".</description>
+        <lastBuildDate>Mon, 21 Oct 2024 14:09:36 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <language>pt</language>
+        <image>
+            <title>Nassim Blog RSS Feed - Categoria: Design - PT</title>
+            <url>https://github.com/Nassim-Tecnologia/brand-assets/logo.png</url>
+            <link>https://github.com/Nassim-Tecnologia/blog</link>
+        </image>
+        <copyright>All rights reserved 2024</copyright>
+        <atom:link href="https://github.com/Nassim-Tecnologia/blog/feeds/pt/category/Design/latest-feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Logo: A Cara da Sua Empresa]]></title>
+            <link>https://github.com/Nassim-Tecnologia/blog/posts/pt/logo.md</link>
+            <guid>pt-logo</guid>
+            <pubDate>Mon, 21 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Muitos empreendedores acabam deixando para depois a criação da marca, porque não acham que é um investimento importante. No entanto, o logo merece uma atenção especial, pois ele ajuda sua empresa a conquistar o tão sonhado sucesso. O logotipo é o principal objeto que ficará marcado na mente das pessoas, clientes. Ao visualizarem seu logo, rapidamente as pessoas fazem associações com tudo que sua empresa representa no mercado.]]></description>
+            <content:encoded><![CDATA[{"metadata":{"readTime":7,"author":{"description":"Desenvolvedor de software altamente qualificado, especializado em Python e Web 3. Ele possui vasta experiência em criar aplicações escaláveis, aprendizado de máquina, microsserviços, CI/CD, bancos de dados SQL & NoSQL, e scraping. \nThiago trabalha com aplicações descentralizadas e contratos inteligentes, com um foco particular na otimização de pipelines de dados e na criação de soluções intuitivas para melhorar a tomada de decisões e os resultados de negócios.\n","name":"Thiago Martins","avatar":"http://github.com/0xthiagomartins.png","contacts":{"email":"thiago.fmartins@outlook.com","instagram":"0xthiagomartins","x":"0xthiagomartins","github":"0xthiagomartins","telegram":"thiagofmartins","linkedin":"0xthiagomartins","whatsapp":"+55 (11) 91964-6223"},"donations":{"ethereum":"0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE","taraxa":"0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE"},"username":"0xthiagomartins"}}}]]></content:encoded>
+            <author>thiago.fmartins@outlook.com (Thiago Martins)</author>
+            <category>Design</category>
+            <enclosure url="https://raw.githubusercontent.com/Nassim-Tecnologia/brand-assets/refs/heads/main/logo-dark-without-bg.png" length="0" type="image/png"/>
+        </item>
+    </channel>
+</rss>
