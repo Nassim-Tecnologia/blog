@@ -16,7 +16,7 @@ Um logotipo sem qualidade tende a passar essa mesma impressão sobre o seu negó
 
 Assim, tendo todas essas características, ela será fundamental para gerar confiança no seu público-alvo e para atrair novos clientes, mas é preciso saber que o logo precisa ter relação com o seu negócio e tenha como foco o cliente e não somente o seu gosto pessoal. Portanto pesquise sobre seu ramo de atividade, verifique os principais atrativos e use as melhores condições de ícones, desenhos, imagens e principalmente cores.
 
-## Passe uma relação direta com o objetivo de sua Empresa!
+# Passe uma relação direta com o objetivo de sua Empresa!
 
 Quer abrir uma empresa de Sucesso? Saiba que o primeiro passo é investir em um nome de fácil assimilação, que seja lembrado facilmente. Tenha uma marca impactante e que seu desenho e slogan sejam de fácil gravação. Consiga um domínio (o www) com o nome da empresa e o conjunto irá favorecer a aceitação do mercado.
 
@@ -24,16 +24,18 @@ Portanto sempre destine parte do investimento do capital da abertura da empresa 
 
 Assim o logo estará presente em tudo o que envolve a empresa e a qualidade será fundamental para manter sua credibilidade intocável.
 
-![Disco de Cores](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/logo/brain.png)
+<div style="text-align: center;">
+    <img src="https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/logo/brain.png" alt="Disco de Cores">
+</div>
 
 
-## A Imagem que Permanecerá na Mente dos Clientes
+# A Imagem que Permanecerá na Mente dos Clientes
 
 Fixar a marca na mente das pessoas é fundamental, é desta forma que a melhor divulgação ocorre o, Boca a Boca. A indicação ainda é o contato mais valioso e com mais conversão que existe. Num mundo de incertezas, a indicação gera uma confiança que quase sempre leva a um novo fechamento para sua Empresa.
 
 O Trabalho de divulgação tem que ser constante, as ações de marketing e a fixação da marca são muito importantes. As grandes empresas só chegaram ao sucesso porque trabalharam muito para manter a sua imagem na mente do seu público-alvo. A imagem que ficará na mente do seu cliente de um bom produto ou serviço, é fundamental para gerar um símbolo ou sentimento bom que jamais será esquecido.
 
-## O logo agrega valor à sua Empresa, sua Marca.
+# O logo como agregador de valor da sua Empresa e sua Marca.
 
 Um logo é fundamental para que sua empresa seja cada vez mais bem avaliada pelo mercado, pelos novos e futuros clientes. As grandes empresas estão sempre em busca de uma marca que já conquistou a mente e o coração das pessoas.
 
@@ -44,12 +46,13 @@ A maioria das pessoas confia na identificação que teve com sua marca, com seu 
 
 Não se pode considerar apenas o seu gosto pessoal na hora de criar a imagem de sua empresa, pois estudos já provaram que as cores interferem, sim, na mente das pessoas.
 
-![Disco de Cores](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/logo/color-disk.png)
-
+<div style="text-align: center;">
+    <img src="https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/logo/color-disk.png" alt="Disco de Cores">
+</div>
 
 Quando você utiliza as cores corretas que dão vida ao seu logo, que simpatizam com o ramo de atividade de sua empresa, isso contribui para uma maior aceitação do mercado e as pessoas tendem a entrar em contato e fechar negócio mais facilmente.
 
-## Significado das cores em seu logo
+## Significado das cores
 
 Quem apostar na cor azul, deve saber que ela passa a sensação de uma empresa honesta, leal, responsável e conservadora, sem falar na tranquilidade.
 
@@ -75,10 +78,14 @@ O branco é indicado para quem quer passar uma imagem segura e conservadora. É 
 
 No entanto, se o objetivo é se destacar na multidão, procure outra cor. Quem quiser usar o preto deve ter em mente que ele transpassa seriedade, sofisticação e elegância.
 
-## A Identidade Visual é um dos pontos mais importantes, pois é desta forma que sua empresa será reconhecida.
+## A Identidade Visual
+
+A Identidade Visual é um dos pontos mais importantes, pois é desta forma que sua empresa será reconhecida.
 
 A marca é o principal elo entre o negócio e o cliente, pois através da logomarca ele identifica sua empresa e diferencia ela das demais empresas. Com o passar do tempo, a marca passa a ser o referencial da qualidade daquele produto ou serviço. Por isso é muito importante que sua empresa tenha uma marca bem desenhada que transmita de forma clara a essência da sua empresa, serviços e produtos oferecidos.
 
-## Veja como funciona a criação da logomarca para sua empresa, produto ou serviço:
+---
+
+# Veja como funciona a criação da logomarca para sua empresa, produto ou serviço:
 
 Conversamos com o cliente para entender melhor sua empresa, serviços e produtos, caso o cliente tenha uma ideia de como gostaria que fosse criada a marca, ouvimos o cliente e trabalhamos em cima destas informações. Caso o cliente não tenha nenhuma ideia, com nossa experiência, criamos 3 modelos de como pode ficar a logo marca da empresa. Apresentamos os modelos criados, e efetuamos ajustes necessários até a aprovação do cliente. Todo o processo é feito em conjunto com o cliente.
