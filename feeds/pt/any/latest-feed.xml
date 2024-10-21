@@ -4,7 +4,7 @@
         <title>Nassim Blog RSS Feed - PT</title>
         <link>https://github.com/Nassim-Tecnologia/blog</link>
         <description>Fique atualizado com os últimos posts do blog de todos os autores e categorias.</description>
-        <lastBuildDate>Sun, 20 Oct 2024 12:07:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Oct 2024 10:43:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>pt</language>

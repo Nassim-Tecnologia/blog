@@ -164,6 +164,7 @@ const generateRSS = () => {
                     image: data.image,
                     author: [
                         {
+                            username: author.username,
                             name: author.name, //OK
                             email: author.contacts.email, //OK
                         },
@@ -261,6 +262,7 @@ const generateRSS = () => {
                 image: data.image,
                 author: [
                     {
+                        username: author.username,
                         name: author.name,
                         email: author.contacts.email,
                     },

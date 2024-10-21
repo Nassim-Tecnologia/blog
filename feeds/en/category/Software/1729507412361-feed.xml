@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Nassim Blog RSS Feed - EN - Thiago Martins</title>
+        <title>Nassim Blog RSS Feed - Category: Software - EN</title>
         <link>https://github.com/Nassim-Tecnologia/blog</link>
-        <description>Stay updated with the latest blog posts from Thiago Martins.</description>
-        <lastBuildDate>Sun, 20 Oct 2024 12:07:01 GMT</lastBuildDate>
+        <description>Latest posts in the "Software" category.</description>
+        <lastBuildDate>Mon, 21 Oct 2024 10:43:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <language>en</language>
         <image>
-            <title>Nassim Blog RSS Feed - EN - Thiago Martins</title>
+            <title>Nassim Blog RSS Feed - Category: Software - EN</title>
             <url>https://github.com/Nassim-Tecnologia/brand-assets/logo.png</url>
             <link>https://github.com/Nassim-Tecnologia/blog</link>
         </image>
         <copyright>All rights reserved 2024</copyright>
-        <atom:link href="https://github.com/Nassim-Tecnologia/blog/feeds/en/author/0xthiagomartins/latest-feed.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://github.com/Nassim-Tecnologia/blog/feeds/en/category/Software/latest-feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[DAG-based DLT Concepts]]></title>
             <link>https://github.com/Nassim-Tecnologia/blog/posts/en/dag-based-dlt.md</link>
