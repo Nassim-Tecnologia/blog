@@ -4,7 +4,7 @@ author: "0xthiagomartins"
 categories:
   - Blockchain
   - Cryptocurrency
-date: "2023-06-02"
+date: "2024-10-22"
 image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/pos-superior-pow/pos-v-pow.png"
 description: "Uma análise abrangente comparando os mecanismos de consenso Proof of Stake (PoS) e Proof of Work (PoW), enfatizando os benefícios do PoS em áreas como eficiência econômica, segurança, descentralização e governança."
 ---
