@@ -4,7 +4,7 @@ author: "0xthiagomartins"
 categories:
   - Web 3.0
 date: "2024-10-24"
-image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/pos-superior-pow/pos-v-pow.png"
+image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/governance-principles-blockchain/hero.jpg"
 description: "Governance is the single biggest unsolved problem in cryptocurrency; if we want this movement to succeed, we must take this issue more seriously."
 ---
 
