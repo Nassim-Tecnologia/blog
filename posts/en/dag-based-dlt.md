@@ -2,8 +2,7 @@
 title: "DAG-based DLT Concepts"
 author: "0xthiagomartins"
 categories: 
-  - DLT
-  - Software
+  - Web 3.0
 date: "2023-06-02"
 image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/dag-based-dlt/bdag.png"
 description: "BlockDAG based Distributed Ledger Tecnology"

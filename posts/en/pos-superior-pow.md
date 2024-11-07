@@ -2,8 +2,7 @@
 title: "PoS: A Superior Alternative to PoW"
 author: "0xthiagomartins"
 categories:
-  - Blockchain
-  - Cryptocurrency
+  - Web 3.0
 date: "2024-10-22"
 image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/pos-superior-pow/pos-v-pow.png"
 description: "A comprehensive analysis comparing Proof of Stake (PoS) and Proof of Work (PoW) consensus mechanisms, emphasizing the benefits of PoS in areas such as economic efficiency, security, decentralization, and governance."
