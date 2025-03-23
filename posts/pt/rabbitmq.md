@@ -8,7 +8,9 @@ date: "2025-03-18"
 image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/hero.png"
 description: "O RabbitMQ é um broker de mensagens open source maduro e confiável, usado para comunicação entre aplicações. Descubra como ele facilita tarefas de longa duração, trabalhos em segundo plano e por que é a escolha preferida de grandes empresas globalmente."
 ---
- 
+
+# Visão Geral
+
 RabbitMQ é o broker de mensagens open source mais implantado no mundo e é conhecido como um broker de mensagens maduro, de uso geral, que é amigável ao usuário e confiável. Ele é usado para comunicação entre aplicações e é ideal para tarefas de longa duração ou quando você precisa executar trabalhos em segundo plano com confiabilidade. 
 
 RabbitMQ raramente aparece em destaque porque sempre atua nos bastidores. No entanto, ele desempenha um papel vital e é confiado por grandes empresas ao redor do mundo em diversos setores. O motivo por trás da popularidade do RabbitMQ é o fato de ele ser altamente escalável e facilmente adaptável para atender a diferentes necessidades. E, por último, mas não menos importante, ele é open source com uma comunidade ativa.
@@ -59,3 +61,49 @@ A comunidade oferece diversas oportunidades para suporte e compartilhamento de c
 O RabbitMQ é um software bem mantido, com novas versões lançadas aproximadamente a cada 6 meses. Obtenha informações sobre lançamentos e mudanças através do [changelog no site do RabbitMQ](https://www.rabbitmq.com/release-information) ou pelas [notas de lançamento no GitHub](https://github.com/rabbitmq/rabbitmq-server/releases).
 
 ![rabbitmq timeline](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/release-note.png)
+
+
+# Interface de geranciamento
+
+Vamos acessar a primeira visualização, o **Overview**, que oferece um resumo rápido e fácil de entender do estado do RabbitMQ.
+
+![first view](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/first-view.png)
+
+O overview exibe dois gráficos: um de **Queued Messages** e outro com a **Message rates**. 
+Você pode alterar o intervalo de tempo exibido no gráfico clicando no texto (gráfico: último minuto) acima dos gráficos. 
+Informações sobre todos os diferentes status das mensagens podem ser encontradas clicando no ponto de interrogação (?).
+
+**Queued messages** mostram um gráfico com o número total de mensagens enfileiradas em todas as suas filas. 
+**Ready** indica o número de mensagens disponíveis para entrega. 
+**Unacked** representa o número de mensagens pelas quais o servidor está aguardando um reconhecimento.
+
+O gráfico de **Message rates** mostra a velocidade com que as mensagens estão sendo processadas. 
+**Publish** indica a taxa na qual as mensagens estão entrando no servidor, e **Confirm** mostra a taxa na qual o servidor está confirmando as mensagens.
+
+**Global Count** mostra o número total de conexões, canais, exchanges, filas e consumidores para TODOS os hosts virtuais aos quais o usuário atual tem acesso.
+
+## Nodes
+
+Um cluster no RabbitMQ pode incluir um ou vários nodes (servidores). A visualização **Nodes** exibe informações sobre os diferentes nós do cluster RabbitMQ. 
+É aqui que você encontra dados sobre a memória do servidor, o número de processos Erlang por nó e outras informações específicas de cada nó. 
+Info exibe informações adicionais sobre o nó e os plugins habilitados.
+
+## Churn Rate
+
+As taxas de abertura/fechamento de conexões e canais são métricas importantes do sistema que devem ser monitoradas.
+Um alto volume de abertura e fechamento de conexões e canais pode levar ao esgotamento dos recursos do node.
+
+![churn-rate](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/churn-rate.png)
+
+## Portas e contextos
+
+As portas de escuta para diferentes protocolos podem ser encontradas na seção **Ports and contexts**, conforme mostrado na imagem acima.
+
+## Exportar e Importa Definições
+
+É possível importar e exportar definições de configuração.
+Ao baixar o arquivo de definições, você obtém uma representação JSON do seu broker, ou seja, das configurações do RabbitMQ. 
+Isso pode ser usado para restaurar exchanges, filas, hosts virtuais, políticas e usuários. Essa funcionalidade pode ser utilizada como um backup. 
+Sempre que você fizer uma alteração na configuração, poderá manter as configurações antigas, por precaução.
+
+![export and import section](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/export-import.png)
