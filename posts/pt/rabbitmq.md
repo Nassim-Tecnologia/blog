@@ -65,6 +65,8 @@ O RabbitMQ é um software bem mantido, com novas versões lançadas aproximadame
 
 # Interface de geranciamento
 
+## Visão Geral
+
 Vamos acessar a primeira visualização, o **Overview**, que oferece um resumo rápido e fácil de entender do estado do RabbitMQ.
 
 ![first view](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/first-view.png)
@@ -82,24 +84,24 @@ O gráfico de **Message rates** mostra a velocidade com que as mensagens estão 
 
 **Global Count** mostra o número total de conexões, canais, exchanges, filas e consumidores para TODOS os hosts virtuais aos quais o usuário atual tem acesso.
 
-## Nodes
+### Nodes
 
 Um cluster no RabbitMQ pode incluir um ou vários nodes (servidores). A visualização **Nodes** exibe informações sobre os diferentes nós do cluster RabbitMQ. 
 É aqui que você encontra dados sobre a memória do servidor, o número de processos Erlang por nó e outras informações específicas de cada nó. 
 Info exibe informações adicionais sobre o nó e os plugins habilitados.
 
-## Churn Rate
+### Churn Rate
 
 As taxas de abertura/fechamento de conexões e canais são métricas importantes do sistema que devem ser monitoradas.
 Um alto volume de abertura e fechamento de conexões e canais pode levar ao esgotamento dos recursos do node.
 
 ![churn-rate](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/churn-rate.png)
 
-## Portas e contextos
+### Portas e contextos
 
 As portas de escuta para diferentes protocolos podem ser encontradas na seção **Ports and contexts**, conforme mostrado na imagem acima.
 
-## Exportar e Importa Definições
+### Exportar e Importa Definições
 
 É possível importar e exportar definições de configuração.
 Ao baixar o arquivo de definições, você obtém uma representação JSON do seu broker, ou seja, das configurações do RabbitMQ. 
@@ -107,3 +109,42 @@ Isso pode ser usado para restaurar exchanges, filas, hosts virtuais, políticas 
 Sempre que você fizer uma alteração na configuração, poderá manter as configurações antigas, por precaução.
 
 ![export and import section](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/export-import.png)
+
+## Conexões e Canais
+
+### Connections
+
+Conexões e canais do RabbitMQ podem estar em diferentes estados:
+
+- **Starting**;
+- **Tuning**;
+- **Opening**;
+- **Running**;
+- **Flow**;
+- **Blocking**;
+- **Blocked**;
+- **Closing**;
+- **Closed**.
+
+O estado **"flow"** indica que a taxa de publicação foi limitada para evitar que o RabbitMQ fique sem memória. 
+Isso ocorre automaticamente quando o RabbitMQ detecta uma conexão que está publicando mensagens mais rapidamente do que a fila consegue processar. 
+Uma conexão com controle de fluxo será bloqueada e desbloqueada várias vezes por segundo para manter uma taxa que o servidor consiga suportar.
+
+A aba de Conexões exibe as conexões estabelecidas com o servidor RabbitMQ. 
+**vhost** mostra em qual host virtual a conexão está operando. **Username** exibe o usuário associado à conexão. 
+**Channels** informa o número de canais usando a conexão. **SSL/TLS** indica se a conexão está protegida com SSL.
+
+Ao clicar em uma das conexões, você obtém uma visão geral daquela conexão específica. 
+É possível visualizar os canais dentro da conexão, as taxas de dados, ver propriedades do cliente e encerrar a conexão.
+
+![Connection Tab](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/connection-tab.png)
+
+### Channels
+
+A aba **Channels** exibe informações sobre todos os canais ativos no momento. 
+**vhost** mostra em qual host virtual o canal está operando e o **username** indica o usuário associado ao canal. **Mode** exibe o modo de garantia do canal.
+
+![Channel Tab](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/channel-tab.png)
+
+Ao clicar em um dos canais, você obtém uma visão detalhada daquele canal específico. 
+A partir dessa visualização, é possível ver a taxa de mensagens e o número de consumidores lógicos que estão recebendo mensagens por meio do canal.
