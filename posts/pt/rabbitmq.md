@@ -163,3 +163,37 @@ Ao clicar no nome da exchange, uma página detalhada sobre a exchange será exib
 Nela, você pode ver e adicionar bindings à exchange, publicar uma mensagem para a exchange ou excluir a exchange.
 
 ![Exchange Details](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/exchange-details.png)
+
+## Filas e Associações
+
+### Queues
+
+A aba **Queues** exibe as filas de todos os vhosts ou de um vhost selecionado.
+
+As filas têm diferentes parâmetros e argumentos dependendo de como foram criadas. A coluna Features exibe os parâmetros pertencentes à fila. Isso pode incluir características como:
+
+- **Durable queue** (fila durável), que garante que o RabbitMQ nunca perderá a fila.
+- **Message TTL** (Tempo de Vida da Mensagem), que define quanto tempo uma mensagem publicada em uma fila pode viver antes de ser descartada.
+- **Auto expire**, que determina quanto tempo uma fila pode ficar sem uso antes de ser automaticamente excluída.
+- **Max length** (comprimento máximo), que define quantas mensagens (prontas) uma fila pode conter antes de começar a descartá-las.
+- **Max length bytes**, que define o tamanho total do corpo das mensagens prontas que a fila pode conter antes de começar a descartá-las.
+
+![Queue Tab](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/queue-tab.png)
+
+Você também pode criar uma fila a partir desta visualização.
+
+Se você clicar em qualquer fila escolhida na lista de filas, todas as informações sobre essa fila serão exibidas.
+
+![Queue Details](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/queue-details.png)
+
+Os dois primeiros gráficos incluem as mesmas informações da visão geral, mas mostram apenas o número de mensagens em fila e as taxas de mensagens para aquela fila específica.
+
+**Consumers** exibe os consumidores/canais que estão conectados à fila.
+
+### Bindings
+
+Um *binding* (associação) pode ser criado entre uma exchange e uma queue. Todas as associações ativos para a fila são exibidos sob a seção **Bindings**. 
+Você também pode criar um novo binding para uma fila a partir desta visualização ou desfazer o binding de uma fila com uma exchange.
+
+![Binding Details](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/binding-details.png)
+
