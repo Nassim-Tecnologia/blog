@@ -148,3 +148,18 @@ A aba **Channels** exibe informações sobre todos os canais ativos no momento.
 
 Ao clicar em um dos canais, você obtém uma visão detalhada daquele canal específico. 
 A partir dessa visualização, é possível ver a taxa de mensagens e o número de consumidores lógicos que estão recebendo mensagens por meio do canal.
+
+## Exchanges
+
+Todas as exchanges podem ser listadas na aba **Exchanges**. 
+**Virtual host** mostra o vhost ao qual a exchange pertence, e **type** indica o tipo de exchange, como *direct*, *topic*, *headers* ou *fanout*. 
+**Features** exibem os parâmetros da exchange (por exemplo, **D** significa durable e **AD** significa auto-delete). 
+As *features* e o *type* podem ser definidos no momento da criação da exchange. 
+Nessa lista, há algumas exchanges **amq.*** e a exchange padrão (sem nome), que são criadas automaticamente por padrão.
+
+![Exchange Tab](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/exchange-tab.png)
+
+Ao clicar no nome da exchange, uma página detalhada sobre a exchange será exibida. 
+Nela, você pode ver e adicionar bindings à exchange, publicar uma mensagem para a exchange ou excluir a exchange.
+
+![Exchange Details](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/exchange-details.png)
