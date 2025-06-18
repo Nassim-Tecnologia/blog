@@ -6,7 +6,7 @@ categories:
   - Sistemas
 date: "2025-03-18"
 image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/rabbitmq/hero.png"
-description: "O RabbitMQ é um broker de mensagens open source maduro e confiável, usado para comunicação entre aplicações. Descubra como ele facilita tarefas de longa duração, trabalhos em segundo plano e por que é a escolha preferida de grandes empresas globalmente."
+description: "O RabbitMQ é um broker de mensagens open source usado para comunicação entre aplicações. Descubra porque é a escolha preferida de grandes empresas globalmente."
 ---
 
 # Visão Geral
