@@ -1,5 +1,5 @@
 ---
-title: "Como Criar uma Blockchain de 1 Bilhão de TPS"
+title: "Como Criar uma Blockchain de 1 Bilhão de TPS (sem descentralização, segurança e vergonha)"
 author: "0xthiagomartins"
 categories:
 - Web 3.0
