@@ -14,7 +14,7 @@ Você não odeia quando vê mais um lançamento de layer-1, alegando um milhão,
 
 Uma única máquina de alta performance pode executar transações na Ethereum Virtual Machine (EVM) a ~100k TPS—um fato técnico bem documentado. Mas para atingir esse nível de throughput, você precisa contornar a [Patricia Merkle Trie](https://ethereum.org/en/developers/docs/data-structures-and-encoding/patricia-merkle-trie/) durante leituras e escritas no estado permanente, para remover um grande gargalo de throughput que limita o EVM padrão a pouco menos de 100 TPS. Esse mecanismo no EVM existe para garantir que a rede, desculpe, a máquina única, seja capaz de lidar corretamente com qualquer rollback de estado e reorganizações de rede... enfim, quem se importa, é lento, foi embora, não se preocupe com isso.
 
-Estamos usando o EVM porque ser EVM-compatível, ou melhor ainda, EVM-compatible, é muito importante nos dias de hoje, já que se tornou um padrão no desenvolvimento web3. A maioria das aplicações web3 do mundo são escritas em Solidity ou outras linguagens que compilam para bytecode EVM. Dessa forma, você pode atrair mais desenvolvedores para construir em sua nova rede de 1 bilhão de TPS. Confie em mim, cara, "EVM-compatible" vende muito.
+Estamos usando o EVM porque ser EVM-compatible, ou melhor ainda, EVM-equivalent, é muito importante nos dias de hoje, já que se tornou um padrão no desenvolvimento web3. A maioria das aplicações web3 do mundo são escritas em Solidity ou outras linguagens que compilam para bytecode EVM. Dessa forma, você pode atrair mais desenvolvedores para construir em sua nova rede de 1 bilhão de TPS. Confie em mim, cara, "EVM-equivalent" vende muito.
 
 # Passo 2: Esqueça a rede
 
@@ -36,7 +36,7 @@ Se você está contando, agora temos 100 shards * 100k TPS = 10 milhões de TPS!
 
 # Passo 4: Abandone o EVM
 
-Dissemos que EVM-compatible é a sensação? Isso é notícia velha. Agora é tudo sobre ser o EVM-killer.
+Dissemos que EVM-equivalent é a sensação? Isso é notícia velha. Agora é tudo sobre ser o EVM-killer.
 
 EVM é muito lento. É uma máquina virtual interpretada baseada em pilha que foi projetada para ser totalmente agnóstica à arquitetura de hardware subjacente e sistemas operacionais, para maximizar repetibilidade e correção de execução, para que um grande grupo de máquinas díspares possa operar com segurança na mesma rede. Mas cara, é lento.
 
