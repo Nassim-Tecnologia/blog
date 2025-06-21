@@ -8,6 +8,8 @@ image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main
 description: "Guia satírico para criar uma layer-1 com 1 bilhão de TPS: supercomputador, sem rede, 100 shards e WASM-JIT. Por que descentralização e segurança são superestimadas?"
 ---
 
+![Need for better Layer-1 performance metrics goes unfulfilled, thwarted by misleading tests](https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/1b-tps-blockchain-no-decentralization-security-shame/hero.jpeg)
+
 Você não odeia quando vê mais um lançamento de layer-1, alegando um milhão, 10 milhões ou até 100 milhões de TPS? "Como posso lucrar com o hype?" você pergunta. Bem, hoje é seu dia de sorte! Aqui está um guia passo a passo para construir sua própria rede layer-1 de 1 bilhão de TPS que deixará esses impostores no pó.
 
 # Passo 1: Pegue um supercomputador e execute EVM nele

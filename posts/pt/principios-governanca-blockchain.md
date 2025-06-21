@@ -1,12 +1,4 @@
----
-title: "Os Seis Princípios da Governança de Blockchain"
-author: "0xthiagomartins"
-categories:
-- Web 3.0
-date: "2024-10-24"
-image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/governance-principles-blockchain/hero.jpg"
-description: "A governança é o desafio não resolvido mais significativo no âmbito das criptomoedas; para garantir o sucesso deste movimento, devemos priorizar esta questão com maior seriedade."
----
+
 
 Existe uma concepção equivocada generalizada de que blockchains operam sem a necessidade de governança e que a introdução de mecanismos de governança leva à centralização. Na realidade, a falta de uma governança estruturada tem sido o principal impulsionador da centralização ao longo de toda a história das criptomoedas.
 
@@ -16,7 +8,15 @@ Assim como há limitações à autoridade de um ditador, existem limites a esse 
 
 Como pesquisador dedicado de criptomoedas nos últimos dez anos, observei padrões recorrentes à medida que a história se repete. Meus estudos em filosofia política e história reforçam que essa questão de governança é tão antiga quanto o próprio tempo.
 
-A tecnologia blockchain oferece soluções inovadoras para esses desafios; é a principal razão pela qual me comprometi com este movimento em 2013. Sempre a considerei um catalisador para uma transformação econômica e política profunda. É lamentável que algumas das principais criptomoedas não tenham reconhecido e aproveitado esse potencial, sucumbindo, em vez disso, à ampla ilusão de “consenso social.”
+A tecnologia blockchain oferece soluções inovadoras para esses desafios; é a principal razão pela qual me comprometi com este ---
+title: "Os Seis Princípios da Governança de Blockchain"
+author: "0xthiagomartins"
+categories:
+- Web 3.0
+date: "2024-10-24"
+image: "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/posts/governance-principles-blockchain/hero.jpg"
+description: "A governança é o desafio não resolvido mais significativo no âmbito das criptomoedas; para garantir o sucesso deste movimento, devemos priorizar esta questão com maior seriedade."
+---movimento em 2013. Sempre a considerei um catalisador para uma transformação econômica e política profunda. É lamentável que algumas das principais criptomoedas não tenham reconhecido e aproveitado esse potencial, sucumbindo, em vez disso, à ampla ilusão de “consenso social.”
 
 # A Falha do Consenso Social
 
