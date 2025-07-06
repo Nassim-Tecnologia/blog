@@ -9,7 +9,7 @@ contacts = { email = "thiago.fmartins@outlook.com", instagram = "0xthiagomartins
 donations = { ethereum = "0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE", taraxa = "0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE" }
 certificates = [
     { id = "cert-1", title = "Automation Developer", issuer = "Robocorp", date = "2024-12-06", image = "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/certifications/robocorp.png", verificationUrl = "https://downloads.robocorp.com/certificates/level1python/13a92e0a-6252-498d-be26-6843ec4ce7f8.pdf", description = "Certificado de especialização em RPA com Python e Robocorp, capacitando profissionais a automatizar processos de forma eficiente." },
-    { id = "cert-2", title = "RabbitMQ Training Course", issuer = "CloudAMQP", date = "2025-06-20", image = "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/certifications/cloudamqp.png", verificationUrl = "https://training.cloudamqp.com/certificate/2ef35e57-edec-4b88-a715-bc016d25c350", description = "Certificado de conclusão do curso de treinamento RabbitMQ pela CloudAMQP, demonstrando proficiência em message queuing e sistemas de mensageria distribuída." },
+    { id = "cert-2", title = "RabbitMQ Specialist", issuer = "CloudAMQP", date = "2025-06-20", image = "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/certifications/cloudamqp.png", verificationUrl = "https://training.cloudamqp.com/certificate/2ef35e57-edec-4b88-a715-bc016d25c350", description = "Certificado de conclusão do curso de treinamento RabbitMQ pela CloudAMQP, demonstrando proficiência em message queuing e sistemas de mensageria distribuída." },
 ]
 
 [samuelpoiani]
