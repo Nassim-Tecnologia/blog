@@ -1,6 +1,6 @@
 [0xthiagomartins]
 description = """
-Desenvolvedor de software altamente qualificado, especializado em Python e Web 3. Ele possui vasta experiência em criar aplicações escaláveis, aprendizado de máquina, microsserviços, CI/CD, bancos de dados SQL & NoSQL, e scraping. 
+Desenvolvedor de software altamente qualificado, especializado em RPA e Engenharia de Software. Ele possui vasta experiência em criar aplicações escaláveis, aprendizado de máquina, microsserviços, CI/CD, bancos de dados SQL & NoSQL, e scraping. 
 Thiago trabalha com aplicações descentralizadas e contratos inteligentes, com um foco particular na otimização de pipelines de dados e na criação de soluções intuitivas para melhorar a tomada de decisões e os resultados de negócios.
 """
 name = "Thiago Martins"
@@ -10,7 +10,7 @@ donations = { ethereum = "0xE6339c6f56d44719b6ae1264ea9B4f5eD1710bbE", taraxa = 
 certificates = [
     { id = "cert-1", title = "Automation Developer", issuer = "Robocorp", date = "2024-12-06", image = "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/certifications/robocorp.png", verificationUrl = "https://downloads.robocorp.com/certificates/level1python/13a92e0a-6252-498d-be26-6843ec4ce7f8.pdf", description = "Certificado de especialização em RPA com Python e Robocorp, capacitando profissionais a automatizar processos de forma eficiente." },
     { id = "cert-2", title = "RabbitMQ Specialist", issuer = "CloudAMQP", date = "2025-06-20", image = "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/certifications/rabbitmq.png", verificationUrl = "https://training.cloudamqp.com/certificate/2ef35e57-edec-4b88-a715-bc016d25c350", description = "Certificado de conclusão do curso de treinamento RabbitMQ pela CloudAMQP, demonstrando proficiência em message queuing e sistemas de mensageria distribuída." },
-    { id = "cert-3", title = "Master in AI-driven technologies", issuer = "CrewAI", date = "2025-01-15", image = "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/certifications/crewai.jpeg", verificationUrl = "https://learn.deeplearning.ai/accomplishments/ebb9eb2d-1ba3-4884-8e32-65266491366f?usp=sharing", description = "Curso especializado em tecnologias impulsionadas por IA, demonstrando proficiência no framework CrewAI e automação de agentes de IA." },
+    { id = "cert-3", title = "Master in AI-driven technologies", issuer = "CrewAI", date = "2025-07-15", image = "https://raw.githubusercontent.com/Nassim-Tecnologia/blog/refs/heads/main/assets/certifications/crewai.jpeg", verificationUrl = "https://learn.deeplearning.ai/accomplishments/ebb9eb2d-1ba3-4884-8e32-65266491366f?usp=sharing", description = "Curso especializado em tecnologias impulsionadas por IA, demonstrando proficiência no framework CrewAI e automação de agentes de IA." },
 ]
 
 [samuelpoiani]
